@@ -137,7 +137,7 @@
 							<li style="color:#ea9b2d;">Criteria for nodes splitting</li>
 							<li style="color:#ea9b2d;">Overfitting/underfitting concepts</li>
 							<li style="color:#ea9b2d;">Decision Trees pruning</li>
-							<li style="color:#ea9b2d;">Decision Trees algorithms</li>
+							<li style="color:#ea9b2d;">Decision Trees types</li>
 						</ul>
 						
 				</section>
@@ -207,7 +207,7 @@
 							<li style="color:#ea9b2d;">select the best attribute as the root node</li>
 							<li style="color:#ea9b2d;">for each value of this attribute, create new child node</li>
 							<li style="color:#ea9b2d;">split samples to child nodes</li>
-							<li style="color:#ea9b2d;">if subset is pure--> terminal node</li>
+							<li style="color:#ea9b2d;">if subset is pure, then terminal node</li>
 							<li style="color:#ea9b2d;">else: continue splitting</li>
 						</ul>							
 						<aside class="notes">
@@ -225,17 +225,17 @@
 					<section >
 						<h2>Input variables example</h2>
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\DecisionTrees_InputVariables.jpg " alt="Variables">	
-						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2002)</small>
+						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2009)</small>
 					</section>	
 					<section >
 						<h2>Decision Trees example</h2>
 						(contructed based on the previous presented variables)
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\DecisionTrees_Example.jpg" alt="DT_Example">	
-						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2002)</small>
+						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2009)</small>
 					</section>	
 					<section > 
-						<h2>How to select the best attribute as the root node?</h2> 
-						<p>Patrons attribute</p>	
+						<h2>How to select the best variable as the root node?</h2> 
+						<p>Patrons variable</p>	
                                                 <br><img width="600" height="350" data-src="resources\DecisionTrees\OutlookAttribute.jpg" alt="OutlookAttribute">							
 						<aside class="notes">
 						You can find your presenter notes here (hit »S« on your keyboard).
@@ -243,11 +243,11 @@
 					</section>
 					
 					<section >
-						<h2>Rain attribute</h2>
+						<h2>Rain variable</h2>
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\RainAttribute.jpg" alt="RainAttribute">	
 					</section>	
 					<section >
-						<h2>Hungry attribute</h2>
+						<h2>Hungry variable</h2>
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\HungryAttribute.jpg" alt="HungryAttribute">	
 					</section>	
 				</section>
@@ -255,7 +255,7 @@
 				<!--Measures used to split the decision trees nodes-->
 				<section>
 					<h2>Measures used to split the tree nodes</h2>
-					<p> The splits defined at each internal node of the decision tree are estimated from training data by using a statistical procedure</p>
+					<p> The splits defined at each internal node of decision trees are estimated from training data by using a statistical procedure</p>
 						<ul>
 							<li style="color:#ea9b2d;">Information gain</li>
 							<li style="color:#ea9b2d;">Variance reduction (regression problem)</li>
@@ -281,19 +281,19 @@
 						</ul>	
 							
 						<br><img width="300" height="55" style="background-color: transparent; box-shadow: none;" data-src="resources\DecisionTrees\Entropy.png" alt="Entropy">	
-						<p>
-							<li style="color:#ea9b2d;">p = number of positive examples</li>
-							<li style="color:#ea9b2d;"> n = number of negative examples</li>
-						</p>
+						<small>
+							<br>p = number of positive examples
+							<br>n = number of negative examples
+						</small>
 					</section>	
 					<section >
 						<h2>Information gain (II)</h2>
 										
 						<br><img width="300" height="60" style="background-color: transparent; box-shadow: none;" data-src="resources\DecisionTrees\InformationGain.png " alt="Information Gain">	
-						<p>
-							<li style="color:#ea9b2d;">H = entropy </li>
-							<li style="color:#ea9b2d;">k = values an attribute can take</li>
-						</p>
+						<small>
+							<br>H = entropy
+							<br>k = values an attribute can take
+						</smal>
 					</section>	
 				</section>
 				<!-- Entropyexample--> 
@@ -325,12 +325,12 @@
 							
 				<!--Question-->
 				<section>
-					<h2>Calculate the information gain when the attribute ‚type‘ is used for splitting thetree nodes </h2>
+					<h2>Calculate the information gain when the variable ‚type‘ is used for splitting the tree nodes </h2>
 
 				</section>
 			<!--Splitting nodes for continuous variables-->
 				<section>
-					<h2>Splitting tree nodes using continuous attributes</h2>
+					<h2>Splitting tree nodes using continuous variables</h2>
 					<p> There are two main options</p>
 						<ul>
 							<li style="color:#ea9b2d;">Binay decision = consider all possible splits according to the attributes values (-)</li>
@@ -372,7 +372,7 @@
 				</section>
 				<!--Optimal decision trees-->
 				<section>
-					<h2>Optimal decision trees</h2>
+					<h2>Optimal Decision Trees</h2>
 					
 						<ul>
 							<li style="color:#ea9b2d;">Do not grow a tree that is too large</li>
@@ -382,7 +382,7 @@
 				</section>
 				<!--Decision trees-->
 				<section>
-					<h2>Decision trees pros and cons</h2>
+					<h2>Decision Trees pros and cons</h2>
 					<p>Pros</p>
 					
 						<ul>
@@ -402,13 +402,13 @@
 				</section>
 				<!--Decision trees types-->
 				<section>
-					<h2>Decision trees types</h2>
+					<h2>Decision Trees types</h2>
 					<p>'Simple' decision trees</p>
 					
 						<ul>
 							<li style="color:#ea9b2d;">Classification and Regression Tree (CART) (Breiman et al., 1984)</li>
 						</ul>
-					<p>Ensemble of decision trees (weak learners):</p>
+					<p>Ensemble of Decision Trees (weak learners):</p>
 					
 						<ul>
 							<li style="color:#ea9b2d;">Boosting: weighted average of the results</li>
@@ -438,9 +438,10 @@
 				<h2> Reference list </h2>
 				<br>
 				<reference_list>
+				<br>Breiman, L. (2001). Random Forest. Machine Learning, 45
 				<br>Friedl, M.A., & Brodley, C.E. (1997). Decision tree classification of land cover from remotely sensed data. Remote Sensing of Environment, 61, 399-409
-				<br>
-				<a href="https://doi.org/10.1016/S0034-4257(97)00049-7">10.1016/S0034-4257(97)00049-7</a>
+				<br> Russell, S., & Norvig, P. (2009). Artificial intelligence: a modern approach. (3 edition ed.). Pearson
+				<!--<a href="https://doi.org/10.1016/S0034-4257(97)00049-7">10.1016/S0034-4257(97)00049-7</a>-->
 				</reference_list>
 				</section>
 				

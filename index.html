@@ -153,7 +153,7 @@
 						<ul>
 							<li style="color:#ea9b2d;">Input/output values can be both numerical and categorical</li>
 							<li style="color:#ea9b2d;">Missing values are allowed</li>
-							<li style="color:##ea9b2d;">Classification structure is explicit and easily interpretable (Friedl & Brodley, 1997)</li>
+							<li style="color:#ea9b2d;">Classification structure is explicit and easily interpretable (Friedl & Brodley, 1997)</li>
 						</ul>
 						</section>
 					
@@ -204,7 +204,7 @@
 						<h2>How to construct Decision Trees?</h2> 
 						<p>The mains steps are:</p>
 						<ul>
-							<li style="c#ea9b2d;">select the best attribute as the root node</li>
+							<li style="color:#ea9b2d;">select the best attribute as the root node</li>
 							<li style="color:#ea9b2d;">for each value of this attribute, create new child node</li>
 							<li style="color:#ea9b2d;">split samples to child nodes</li>
 							<li style="color:#ea9b2d;">if subset is pure--> terminal node</li>
@@ -225,13 +225,13 @@
 					<section >
 						<h2>Input variables example</h2>
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\DecisionTrees_InputVariables.jpg " alt="Variables">	
-						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2022)</small>
+						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2002)</small>
 					</section>	
 					<section >
 						<h2>Decision Trees example</h2>
 						(contructed based on the previous presented variables)
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\DecisionTrees_Example.jpg" alt="DT_Example">	
-						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2022)</small>
+						<small>Source: Artificial Intelligence: a modern approach (Stuart Russel and Peter Norvig, 2002)</small>
 					</section>	
 					<section > 
 						<h2>How to select the best attribute as the root node?</h2> 
@@ -252,6 +252,39 @@
 					</section>	
 				</section>
 				
+					
+				<!-- How to construct Decision Trees--> 
+
+					<section id="DT_4">
+										
+					<section >
+						<h2>Information gain</h2>
+						<p>Entropy</>
+							<ul>
+							<li style="color:#ea9b2d;">a measure of uncertainty/how pure a subset/tree node is</li>
+							<li style="color:#ea9b2d;">units used to measure it: bits</li>
+
+						</ul>	
+							
+						<br><img width="250" height="150" data-src="resources\DecisionTrees\Entropy.png" alt="Entropy">	
+						<small>
+							<li style="color:#ea9b2d;">p = number of positive examples</li>
+							<li style="color:#ea9b2d;"> n = number of negative examples</li>
+						</small>
+					</section>	
+					<section >
+						<h2>Information gain (II)</h2>
+										
+						<br><img width="250" height="150" data-src="resources\DecisionTrees\InformationGain.png " alt="Information Gain">	
+						<small>
+							<li style="color:#ea9b2d;">H = entropy </li>
+							<li style="color:#ea9b2d;">k = values an attribute can take</li>
+						</small>
+					</section>	
+				</section>
+					
+					
+					
 				
 				<!-- AUTHORS: INCLUDE AN IMAGE IN YOUR SLIDE: --> 
 				<section ><h2> ... a little allegory on the benefit of Copernicus</h2>

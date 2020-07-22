@@ -251,6 +251,22 @@
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\HungryAttribute.jpg" alt="HungryAttribute">	
 					</section>	
 				</section>
+					
+				<!--Measures used to split the decision trees nodes-->
+				<section>
+					<h2>Measures used to split the tree nodes</h2>
+					<p> The splits defined at each internal node of the decision tree are estimated from training data by using a statistical procedure</p>
+						<ul>
+							<li style="color:#ea9b2d;">Information gain</li>
+							<li style="color:#ea9b2d;">Variance reduction (regression problem)</li>
+							<li style="color:#ea9b2d;">Gini impurity</li>
+							<br><img width="80" height="55" data-src="resources\DecisionTrees\Gini.png " alt="Gini">	
+						<p>
+							<li style="color:#ea9b2d;">𝑝𝑖 = probability of an object being classified as a particular class</li>
+						</p>
+
+						</ul>
+				</section>
 				
 					
 				<!-- How to construct Decision Trees--> 
@@ -260,13 +276,13 @@
 					<section >
 						<h2>Information gain</h2>
 						<p>Entropy</>
-							<ul>
+						<ul>
 							<li style="color:#ea9b2d;">a measure of uncertainty/how pure a subset/tree node is</li>
 							<li style="color:#ea9b2d;">units used to measure it: bits</li>
 
 						</ul>	
 							
-						<br><img width="300" height="70" data-src="resources\DecisionTrees\Entropy.png" alt="Entropy">	
+						<br><img width="300" height="60" data-src="resources\DecisionTrees\Entropy.png" alt="Entropy">	
 						<p>
 							<li style="color:#ea9b2d;">p = number of positive examples</li>
 							<li style="color:#ea9b2d;"> n = number of negative examples</li>
@@ -290,25 +306,67 @@
 						<p>Entropy</>
 						<br><img width="600" height="350" data-src="resources\DecisionTrees\DecisionTrees_InputVariables.jpg" alt="InputVariables">	
 																
-						<br><img width="400" height="60" data-src="resources\DecisionTrees\Entropy_Example.png " alt="EntropyExample">	
+						<br><img width="400" height="55" data-src="resources\DecisionTrees\Entropy_Example.png " alt="EntropyExample">	
 
 					</section>	
 				<section>
 					<h2>Calculation of information gain for the 'patrons' variable</h2>
 					<br><img width="600" height="350" data-src="resources\DecisionTrees\OutlookAttribute.jpg" alt="OutlookAttribute">
-					<br><img width="60" height="60" data-src="resources\DecisionTrees\None.png" alt="NonAtttribute">
-					<br><img width="60" height="60" data-src="resources\DecisionTrees\Some.png" alt="SomeAtttribute">
-					<br><img width="400" height="60" data-src="resources\DecisionTrees\Full.png" alt="SomeAtttribute">
-					<br><img width="400" height="60" data-src="resources\DecisionTrees\InformationGains_Patrons.png" alt="InformationGainPatrons">
-					<br><img width="400" height="60" data-src="resources\DecisionTrees\InformationGains_Patrons2.png" alt="InformationGainPatrons_Final">
+					<br><img width="60" height="55" data-src="resources\DecisionTrees\None.png" alt="NonAtttribute">
+					<br><img width="60" height="55" data-src="resources\DecisionTrees\Some.png" alt="SomeAtttribute">
+					<br><img width="400" height="55" data-src="resources\DecisionTrees\Full.png" alt="SomeAtttribute">
+					<br><img width="400" height="55" data-src="resources\DecisionTrees\InformationGains_Patrons.png" alt="InformationGainPatrons">
+					<br><img width="400" height="55" data-src="resources\DecisionTrees\InformationGains_Patrons2.png" alt="InformationGainPatrons_Final">
 					
 				</section>
 				</section>
 							
 				<!--Question-->
 				<section>
-					<h2>Calculate the information gain when the attribute ‚type‘ is used for splitting the nodes</h2>
+					<h2>Calculate the information gain when the attribute ‚type‘ is used for splitting thetree nodes </h2>
 
+				</section>
+			<!--Splitting nodes for continuous variables-->
+				<section>
+					<h2>Splitting tree nodes used continuous attributes</h2>
+					<p> There are two main options</p>
+						<ul>
+							<li style="color:#ea9b2d;">Binay decision = consider all possible splits according to the attributes values (-)</li>
+							<li style="color:#ea9b2d;">Discretization: ordinal categorical feature (+)</li>
+
+						</ul>
+				</section>
+			<!--Overfitting and underfitting-->
+				<section>
+					<section>
+					<h2>Overfitting and underfitting</h2>
+					<p>Overfitting: learning noise on top of the signal</p>
+						<ul>
+							<li style="color:#ea9b2d;">Presence of noise</li>
+							<li style="color:#ea9b2d;">Lack of representative samples</li>
+
+						</ul>
+					<p>Underfitting: the model is too simple to find the patterns in the data</p>
+					</section>
+				
+					<section>
+					<h2>Optimal size of decision trees</h2>
+					<p>Too large: overfitting</p>
+						<ul>
+							<li style="color:#ea9b2d;">Poor generalization to new samples (low bias/high variance)</li>							
+							
+						</ul>
+						<br><img width="100" height="100" data-src="resources\DecisionTrees\Overfitting.png " alt="Overfitting">
+							<small>overfitting</small>
+					<p>Too small: underfitting</p>
+						<ul>
+							<li style="color:#ea9b2d;">Poor fit to the data (high bias/low variance)</li>
+							
+						</ul>
+							<br><img width="100" height="100" data-src="resources\DecisionTrees\Underfitting.png " alt="Underfitting">
+							<small>Underfitting</small>
+					</section>
+				
 				</section>
 					
 				

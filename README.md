@@ -1,3 +1,4 @@
+# Decision Trees
 Slides: https://eo4geocourses.github.io/UT-ITC_Satellite_Data_Classification_Decision_Trees
 
 Created by: Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente

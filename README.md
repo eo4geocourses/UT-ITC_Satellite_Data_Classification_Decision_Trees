@@ -2,7 +2,7 @@ Slides: https://eo4geocourses.github.io/UT-ITC_Satellite_Data_Classification_Dec
 
 Created by: Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente
 
-Learning objective: the overall goal of this learning unit is to explain how decision trees works
+Learning objective: the overall goal of this learning unit is to explain how decision trees method works
 
 Content:
 (1) General Information; 
